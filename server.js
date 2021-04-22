@@ -159,7 +159,8 @@ app.prepare().then(async () => {
 
     const isBucketsAvailable = await Utilities.checkTextile();
 
-    if (!isBucketsAvailable && Environment.IS_PRODUCTION) {
+    if (true) {
+      //NOTE(martina): change this back when done migrating   !isBucketsAvailable && Environment.IS_PRODUCTION
       return res.redirect("/maintenance");
     }
 
