@@ -178,7 +178,7 @@ export const isEpubType = (type) => {
   }
 };
 
-export const isFontFile = (fileName) => {
+export const isFontFile = (fileName = "") => {
   return Utilities.endsWithAny([".ttf", ".otf", ".woff", ".woff2"], fileName.toLowerCase());
 };
 
